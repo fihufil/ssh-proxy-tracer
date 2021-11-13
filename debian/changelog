@@ -1,0 +1,5 @@
+ssh-proxy-tracer (1.0-0rapidrage0~20.04) focal; urgency=low
+
+  * Initial release as deb
+
+ -- Filip Dorosz <filip.dorosz@rapidrage.org>  Sat, 13 Nov 2021 14:13:52 +0100

@@ -1,0 +1,13 @@
+Source: ssh-proxy-tracer
+Maintainer: Filip Dorosz <filip.dorosz@rapidrage.org>
+Section: python
+Priority: optional
+Build-Depends: python3-setuptools, python3-all, dh-python, debhelper (>= 9)
+Standards-Version: 3.9.1
+
+Package: python3-ssh-proxy-tracer
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}, python3-bpfcc, bpfcc-tools
+Description: SSH proxy connection tracer
+ SSH proxy connection tracer enables auditing of connections make by Open SSH server proxy
+
