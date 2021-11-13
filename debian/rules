@@ -19,8 +19,8 @@ override_dh_auto_build:
 override_dh_auto_install:
 	python3 setup.py install --force --root=debian/ssh-proxy-tracer --no-compile -O0 --install-layout=deb --prefix=/usr
 
-override_dh_install:
-	dh_install
+override_dh_fixperms:
+	dh_fixperms
 	chown root:adm $(PKGDIR)/var/log/ssh/
 	touch $(PKGDIR)/var/log/ssh/auth.log
 	chown syslog:adm $(PKGDIR)/var/log/ssh/auth.log
