@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import os
 import pwd
 from socket import AF_INET, AF_INET6, inet_ntop
 from struct import pack
@@ -9,7 +10,11 @@ VERSION = 1.0
 
 
 def read_bpf_prog(prog_name):
-    with open(prog_name) as prog_c:
+    prog_name_path = os.path.join(
+        os.path.dirname(os.path.realpath(__file__)),
+        prog_name
+    )
+    with open(prog_name_path) as prog_c:
         return prog_c.read()
 
 
