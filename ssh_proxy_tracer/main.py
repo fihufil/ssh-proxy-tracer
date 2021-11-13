@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import os
 import pwd
+import sys
 from socket import AF_INET, AF_INET6, inet_ntop
 from struct import pack
 
@@ -50,13 +51,16 @@ class ConnTracer:
     def print_ipv4_event(self, cpu, data, size):
         event = self.b["ipv4_events"].event(data)
         print(self.print_ip_event(event))
+        sys.stdout.flush()
 
     def print_ipv6_event(self, cpu, data, size):
         event = self.b["ipv6_events"].event(data)
         print(self.print_ip_event(event))
+        sys.stdout.flush()
 
     def run(self):
         print("Tracer started")
+        sys.stdout.flush()
         while True:
             try:
                 self.b.perf_buffer_poll()
