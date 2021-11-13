@@ -1,10 +1,10 @@
 all: bdist_wheel
 
 bdist_wheel:
-	python setup.py bdist_wheel --universal
+	python3 setup.py bdist_wheel --universal
 
 sdist:
-	python setup.py sdist
+	python3 setup.py sdist
 
 build_deb:
 	dpkg-buildpackage -us -uc

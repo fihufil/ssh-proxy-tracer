@@ -2,7 +2,7 @@ Source: ssh-proxy-tracer
 Maintainer: Filip Dorosz <filip.dorosz@rapidrage.org>
 Section: python
 Priority: optional
-Build-Depends: python3-setuptools, python3-all, dh-python, debhelper (>= 9)
+Build-Depends: python3-setuptools, python3-all, dh-python, python3-pip, python3-dev, debhelper (>= 9)
 Standards-Version: 3.9.1
 
 Package: python3-ssh-proxy-tracer
