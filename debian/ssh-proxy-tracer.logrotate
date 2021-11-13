@@ -1,0 +1,9 @@
+/var/log/ssh/auth.log {
+       copytruncate
+       daily
+       rotate 90
+       delaycompress
+       compress
+       notifempty
+       missingok
+}

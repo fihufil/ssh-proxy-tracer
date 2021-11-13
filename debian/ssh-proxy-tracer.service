@@ -1,0 +1,11 @@
+[Unit]
+Description=SSH proxy tracer
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/ssh-proxy-tracer
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+
