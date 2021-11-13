@@ -5,7 +5,7 @@ Priority: optional
 Build-Depends: python3-setuptools, python3-all, dh-python, python3-pip, python3-dev, debhelper (>= 9)
 Standards-Version: 3.9.1
 
-Package: python3-ssh-proxy-tracer
+Package: ssh-proxy-tracer
 Architecture: all
 Depends: ${misc:Depends}, ${python3:Depends}, python3-bpfcc, bpfcc-tools
 Description: SSH proxy connection tracer
