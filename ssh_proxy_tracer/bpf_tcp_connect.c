@@ -1,3 +1,9 @@
+// Copyright (c) 2015 Brendan Gregg.
+// Modified 2021 (c) by Filip Dorosz
+// Licensed under the Apache License, Version 2.0 (the "License")
+//
+// This code is derived from tcpconnect from https://github.com/iovisor/bcc
+
 #include <uapi/linux/ptrace.h>
 #include <net/sock.h>
 #include <bcc/proto.h>
