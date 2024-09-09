@@ -1,3 +1,9 @@
+ssh-proxy-tracer (1.0-0rapidrage0~24.04) noble; urgency=medium
+
+  * Release for noble
+
+ -- Filip Dorosz <filip.dorosz@rapidrage.org>  Mon, 09 Sep 2024 23:31:14 +0200
+
 ssh-proxy-tracer (1.0-0rapidrage0~20.04) focal; urgency=low
 
   * Initial release as deb
