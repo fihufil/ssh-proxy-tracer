@@ -7,7 +7,7 @@ Standards-Version: 3.9.1
 
 Package: ssh-proxy-tracer
 Architecture: all
-Depends: ${misc:Depends}, ${python3:Depends}, python3-bpfcc, bpfcc-tools
+Depends: ${misc:Depends}, ${python3:Depends}, python3-bpfcc, bpfcc-tools, linux-headers-generic
 Description: SSH proxy connection tracer
  SSH proxy connection tracer enables auditing of connections make by Open SSH server proxy
 
